@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "test": "vitest run",
     "build": "next build",
-    "build:vercel": "node scripts/build-vercel.mjs",
+    "build:vercel": "pnpm build",
     "build:analyze": "next experimental-analyze",
     "start": "next start",
     "postinstall": "fumadocs-mdx",
